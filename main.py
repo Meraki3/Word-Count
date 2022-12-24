@@ -1,4 +1,4 @@
-# Nadia Ben Slima
+# Nadia Ben Slima and jobi
 import string
 import multiprocessing
 import time

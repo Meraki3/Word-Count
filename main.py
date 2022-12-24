@@ -1,3 +1,4 @@
+# Nadia Ben Slima
 import string
 import multiprocessing
 import time
@@ -45,19 +46,19 @@ def process_l(line, word_count, lock):
 
 
 def measure_t(num_processes):
-    # Create a manager to create a shared memory space
+    
     manager = multiprocessing.Manager()
 
-    # Create a shared dictionary using the manager
+   
     word_count = manager.dict()
 
-    # Create a lock to synchronize access to the shared dictionary
+    
     lock = manager.Lock()
 
-    # Record the start time
+ 
     start_time = time.time()
 
-    # Create a pool of worker processes
+    
     with multiprocessing.Pool(num_processes) as pool:
         # Open the input file in read mode
         with open(filepath, 'r', encoding="utf8") as fi:
